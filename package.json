@@ -1,0 +1,37 @@
+{
+  "name": "nodets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc && nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "migrate": "node ./src/scripts/digital_demand_migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.15.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cros": "^1.0.1",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "jwt-token": "^1.0.9",
+    "mysql2": "^3.6.0",
+    "node": "^20.5.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}
